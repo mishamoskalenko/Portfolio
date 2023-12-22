@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Misha Moskalenko</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+
+    <link rel="icon" href="./favicon.ico">
+    <link rel="icon" href="./img/favicon/32.png" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./img/favicon/180.png">
+    <link rel="manifest" href="./manifest.webmanifest">
+
+
+    <link rel="preload" href="./fonts/gilroyregular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/gilroymedium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/gilroybold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/gilroysemibold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="page__body container">
+    <h1 class="visually-hidden">Portfolio Misha Moskalenko</h1>
+    <header class="page__header header">
+      <div class="header__catalog catalog">
+        <div class="catalog__image">
+          <img src="./img/IMG_3657-removebg-preview.png" alt="">
+        </div>
+        <div class="catalog__description description">
+          <div class="description__container">
+            <h2 class="description__title">Frontend Developer</h2>
+            <p class="description__subtitle">simple,stylish and logical</p>
+            <!-- <a class="description__projects" href="./projects.html" target="_blank">My projects</a> -->
+          </div>
+        </div>
+        <div class="catalog__portfolio portfolio">
+          <div class="portfolio__container">
+            <p class="portfolio__title">Resume</p>
+            <a class="portfolio__link" href="https://www.linkedin.com/in/misha-moskalenko/">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page__main info container">
+      <p class="info__title">Misha Moskalenko</p>
+      <ul class="info__list info-list">
+        <li class="info-list__item info-list__item--1">Ukraine</li>
+        <li class="info-list__item info-list__item--2"><a class="info-list__link" href="tel:380953440611" target="_blank">38(095) 344 06 11</a></li>
+        <li class="info-list__item info-list__item--4"><a class="info-list__link" href="https://t.me/mishanyyyaaa" target="_blank">Telegram</a></li>
+        <li class="info-list__item info-list__item--5"><a class="info-list__link" href="https://www.linkedin.com/in/misha-moskalenko/" target="_blank">LinkedIn</a></li>
+        <li class="info-list__item info-list__item--3"><a class="info-list__link" href="mailto:misamoskalenko318@gmail.com" target="_blank">misamoskalenko318@gmail.com</a></li>
+        <li class="info-list__item info-list__item--6 "><a class="info-list__link" href="https://www.instagram.com/misha.moskalenko/" target="_blank">Instagram</a></li>
+      </ul>
+      <section class="page__section stats">
+        <div class="stats__profile profile">
+          <h2 class="profile__title">Profile</h2>
+          <p class="profile__description">Hello, my name is Misha. I'm a 17-year-old trainee Front End Developer with a passion for crafting immersive sites. I have some experience in making responsive sites using HTML, CSS(SCSS), and JavaScript. Also,I'm ready to learn new technologies such as React.</p>
+        </div>
+        <div class="stats__skills skills">
+          <h2 class="skills__title">Skills</h2>
+          <ul class="skills__list skills-list">
+            <li class="skills-list__item">HTML</li>
+            <li class="skills-list__item">CSS</li>
+            <li class="skills-list__item">SCSS</li>
+            <li class="skills-list__item">JavaScript</li>
+            <li class="skills-list__item">React</li>
+          </ul>
+        </div>
+      </section>
+      <section class="page__section projects">
+        <h2 class="projects__title">My projects</h2>
+        <ul class="projects__list projects-list">
+          <li class="projects-list__item">
+            <div>
+              <img class="projects-list__image" src="./img/drink.png" alt="Selling coffee drinks website">
+            </div>
+            <div class="projects-list__text">
+              <h3 class="projects-list__title">Drink</h3>
+              <p class="projects-list__description">Selling coffee drinks website using Html,Scss,Gulp</p>
+              <a class="projects-list__button" href="https://foam2404.github.io/Drink/" target="_blank">View</a>
+            </div>
+          </li>
+          <li class="projects-list__item">
+            <div>
+              <img class="projects-list__image" src="./img/cat.png" alt="Selling cat food website">
+            </div>
+            <div class="projects-list__text">
+              <h3 class="projects-list__title">Cat energy</h3>
+              <p class="projects-list__description">Selling cat food website using Html,Scss,Gulp</p>
+              <a class="projects-list__button" href="https://foam2404.github.io/cat-energy/" target="_blank">View</a>
+            </div>
+          </li>
+          <li class="projects-list__item">
+            <div>
+              <img class="projects-list__image" src="./img/flat.png" alt="Selling flats website">
+            </div>
+            <div class="projects-list__text">
+              <h3 class="projects-list__title">U.Flat</h3>
+              <p class="projects-list__description">Selling flats website using React.js</p>
+              <a class="projects-list__button" href="">View</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="./js/script.js" defer></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        let catalogImage = document.querySelector('.catalog__image');
+        let catalogDescription = document.querySelector('.catalog__description');
+        let catalogPortfolio = document.querySelector('.catalog__portfolio');
+        let infoItems = document.querySelectorAll('.info-list__item');
+        let statsProfile = document.querySelector('.stats__profile');
+        let statsSkills = document.querySelector('.stats__skills');
+        let projectsTitle = document.querySelector('.projects__title');
+        let projectsItems = document.querySelectorAll('.projects-list__item');
+
+        function isInViewport(element) {
+          let rect = element.getBoundingClientRect();
+          return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+          );
+        }
+
+        catalogImage.classList.add('catalog__image--animated');
+        catalogDescription.classList.add('catalog__description--animated');
+        catalogPortfolio.classList.add('catalog__portfolio--animated');
+        function handleScroll() {
+
+          infoItems.forEach(function(item, index) {
+            if (isInViewport(item)) {
+              setTimeout(function() {
+                item.classList.add('info-list__item--animated');
+              }, (index + 1) * 200);
+            }
+          });
+          if (isInViewport(statsProfile)) {
+            statsProfile.classList.add('stats__profile--animated');
+          }
+          if (isInViewport(statsSkills)) {
+            statsSkills.classList.add('stats__skills--animated');
+          }
+          if (isInViewport(projectsTitle)) {
+            projectsTitle.classList.add('projects__title--animated');
+          }
+
+          projectsItems.forEach(function (item, index) {
+            if (isInViewport(item)) {
+              setTimeout(function() {
+                item.classList.add('projects-list__item--animated');
+              }, (index + 1) * 200);
+            }
+          });
+        }
+
+        window.addEventListener('scroll', handleScroll);
+      });
+
+    </script>
+  </body>
+</html>
